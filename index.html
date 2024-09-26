@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de SuperMercado</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        header{
+            text-align: center;
+            background-color: rgba(0, 77, 112, 0.849);
+            color: white;
+            padding: 20px 0;
+        }
+
+        .lista-cadastro{
+            display: flex;
+            margin: 20px 0;
+            padding: 0 20px;
+            width: 100%;
+            
+        }
+        .lista-cadastro input[type=text]{
+            flex: 1;
+            height:40px;
+            padding-left: 20px;
+        }
+
+        .lista-produtos-single{
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+            display: flex;
+        }
+        .lista-produtos-single h3{
+            flex: 1;
+
+        }
+        h3.price-produto{
+            text-align: right;
+            font-size: 17px;
+      }
+        h3.price-produto > span{
+            background-color: rgba(0, 77, 112, 0.849);
+            padding: 8px 10px;
+            border-radius: 20px;
+            color: white;
+        }
+        .soma-produto{
+            margin: 20px;
+        }
+        button{
+            margin: 20px;
+            padding: 8px;
+            border-radius: 20px;
+            border: none;
+            background-color: red;
+            color: white;
+        }
+        footer{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Lista de SuperMercado</h2>
+    </header>
+    <div class="lista-cadastro">
+        <input type="text" name="nome-produto" id="" placeholder="Nome do produto">
+        <input type="text" name="valor-produto" placeholder="Valor do produto">
+        <input type="submit" name="acao" value="Cadastrar">
+    </div>
+
+    <div class="lista-produtos">
+
+        <div class="lista-produtos-single">
+            
+        </div>
+        
+
+    </div>
+
+    <div class="soma-produto">
+        <h1>Total: R$ 0,00</h1>
+    </div>
+    <button name="limpar">limpar</button>
+
+    <script src="superMercado.js">
+
+    </script>
+    <footer>
+        <h4> Todos os direitos reservados ©</h4>
+        <h3>Desenvolvido por: Tony</h3>
+    </footer>
+    
+</body>
+</html>
